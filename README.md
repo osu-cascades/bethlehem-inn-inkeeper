@@ -4,11 +4,24 @@ A Homeless Management Information System (HMIS) for [Bethlehem Inn](https://beth
 
 ## Development
 
-TODO
+This is a Rails application, and using PostgreSQL is assumed. After cloning this
+repository, create your database:
 
-## Testing
+`rails db:setup`
 
-TODO
+This will create the database, migrate the schema and create an initial admin
+user for you. Now run the application:
+
+`rails server`
+
+## Test
+
+This application uses minitest and the built-in Rails test harness. Run it:
+
+`rails test`
+
+A _Guardfile_ is also present in this project, and it is pre-configured to
+run rspec with spring. To use it, just run `guard` as usual.
 
 ## Deployment
 
